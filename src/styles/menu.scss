@@ -2,7 +2,7 @@
 
 #menu {
   width: 100%;
-  min-height: 100vh;
+  min-height: 70vh;
   background-color: white;
   padding: 4rem;
 
@@ -52,7 +52,9 @@
     > p {
       text-transform: uppercase;
       letter-spacing: 2px;
-      padding: 1rem 0;
+      text-align: center;
+
+      padding: 1rem 1rem;
     }
 
     > button {
@@ -81,4 +83,3 @@
     margin: 1rem 0;
   }
 }
-
