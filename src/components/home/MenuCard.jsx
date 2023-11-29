@@ -1,24 +1,12 @@
 import React from "react";
-import { motion } from "framer-motion";
 import Popup from "reactjs-popup";
 
 const MenuCard = ({ itemNum, burgerSrc, price, title, handler, delay = 0 }) => {
   return (
-    <motion.div
-      className="menuCard"
-      initial={{
-        x: "-100%",
-        opacity: 0,
-      }}
-      whileInView={{
-        x: 0,
-        opacity: 1,
-      }}
-      transition={{
-        delay,
-      }}
-    >
-      <div></div>
+    <div className="menuCard">
+      <div>
+        <h2>Menú {itemNum}</h2>
+      </div>
       <main>
         <img src={burgerSrc} alt={itemNum} />
 
@@ -33,7 +21,7 @@ const MenuCard = ({ itemNum, burgerSrc, price, title, handler, delay = 0 }) => {
           <div
             style={{
               color: "red",
-              transform: "translate(0%,-500%)",
+              transform: "translate(0%,00%)",
               backgroundColor: "#fff",
               padding: "10px",
               borderRadius: "5px",
@@ -44,7 +32,7 @@ const MenuCard = ({ itemNum, burgerSrc, price, title, handler, delay = 0 }) => {
           </div>
         </Popup>
       </main>
-    </motion.div>
+    </div>
   );
 };
 

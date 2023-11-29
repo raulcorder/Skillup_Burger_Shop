@@ -38,13 +38,12 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
-
         <Route path="/cart" element={<Cart />} />
         <Route path="/shipping" element={<Shipping />} />
         <Route path="/login" element={<Login />} />
         <Route path="/me" element={<Profile />} />
         <Route path="/myorders" element={<MyOrders />} />
-        <Route path="/order/:id" element={<OrderDetails />} />
+        <Route path="/myOrders/OrderDetails/" element={<OrderDetails />} />
       </Routes>
 
       <Footer />

@@ -21,6 +21,9 @@ const Header = ({ isAuthenticated = false }) => {
         <Link to="/cart">
           <FiShoppingCart />
         </Link>
+        <Link to={isAuthenticated ? "/me" : "/login"}>
+          {isAuthenticated ? <FaUser /> : <FiLogIn />}
+        </Link>
 
         <DropdownMenu />
       </div>

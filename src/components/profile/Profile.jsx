@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import me from "../../assets/skj.jpg";
+import me from "../../assets/profile_photo.jpg";
 import { Link } from "react-router-dom";
 import { MdDashboard } from "react-icons/md";
 
@@ -20,9 +20,9 @@ const Profile = () => {
       <main>
         <motion.img src={me} alt="User" {...options} />
         <motion.h5 {...options} transition={{ delay: 0.3 }}>
-          Nelson
+          Emilín
         </motion.h5>
-      
+
         <motion.div
           initial={{
             x: "-100vw",
@@ -33,7 +33,7 @@ const Profile = () => {
             opacity: 1,
           }}
         >
-          <Link to="/myorders">Orders</Link>
+          <Link to="/myorders">Pedidos</Link>
         </motion.div>
 
         <motion.button
@@ -49,7 +49,7 @@ const Profile = () => {
             delay: 0.3,
           }}
         >
-          Logout
+          <Link to="/">Salir</Link>
         </motion.button>
       </main>
     </section>

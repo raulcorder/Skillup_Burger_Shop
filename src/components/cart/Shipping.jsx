@@ -2,6 +2,7 @@ import React from "react";
 import { Country, State } from "country-state-city";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
+import { Link } from "react-router-dom";
 
 const Shipping = () => {
   return (
@@ -52,7 +53,13 @@ const Shipping = () => {
           </div>
 
           <Popup
-            trigger={<button type="button">Confirmar pedido</button>}
+            trigger={
+              <Link to="/myorders">
+                <button className="link" type="button">
+                  Confirmar pedido
+                </button>
+              </Link>
+            }
             position="right center"
           >
             <div>Pedido realizado.</div>
