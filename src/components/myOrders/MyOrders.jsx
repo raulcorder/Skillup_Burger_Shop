@@ -11,19 +11,17 @@ const MyOrders = () => {
         <table>
           <thead>
             <tr>
-              <th>Order Id</th>
-              <th>Status</th>
-              <th>Item Qty</th>
+              <th>Número de pedido</th>
+              <th>Estado</th>
+              <th>Cantidad</th>
               <th>Amount</th>
-              <th>Payment Method</th>
-              <th>Action</th>
+              <th>Importe</th>
+              <th>Método de pago</th>
+              <th>Ver más</th>
             </tr>
           </thead>
 
-          <tbody>
-//     Add the code for the table body
-           
-          </tbody>
+          <tbody></tbody>
         </table>
       </main>
     </section>
